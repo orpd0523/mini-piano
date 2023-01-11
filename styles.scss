@@ -1,85 +1,87 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #AFDCEB;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .piano {
-    display: flex;
-  }
-  
-  .key {
-    height: calc(var(--width) * 4);
-    width: var(--width);
-  }
-  
-  .white {
-    --width: 6.25rem;
-    background-color: white;
-    border: .0625rem solid #333;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  .red{
-    --width: 6.25rem;
-    background-color: red;
-    border: .0625rem solid #333;
-  }
+body {
+  background-color: #afdceb;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .orange{
-    --width: 6.25rem;
-    background-color: orange;
-    border: .0625rem solid #333;
-  }
+.piano {
+  display: flex;
+}
 
-  .yellow{
-    --width: 6.25rem;
-    background-color: yellow;
-    border: .0625rem solid #333;
-  }
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
 
-  .green{
-    --width: 6.25rem;
-    background-color: green;
-    border: .0625rem solid #333;
-  }
+.white {
+  --width: 6.25rem;
+  background-color: white;
+  border: 0.0625rem solid #333;
+}
 
-  .blue{
-    --width: 6.25rem;
-    background-color: blue;
-    border: .0625rem solid #333;
-  }
+.red {
+  --width: 6.25rem;
+  background-color: red;
+  border: 0.0625rem solid #333;
+}
 
-  .indigo{
-    --width: 6.25rem;
-    background-color: indigo;
-    border: .0625rem solid #333;
-  }
+.orange {
+  --width: 6.25rem;
+  background-color: orange;
+  border: 0.0625rem solid #333;
+}
 
-  .violet{
-    --width: 6.25rem;
-    background-color: violet;
-    border: .0625rem solid #333;
-  }
-  
-  .white.active {
-    background-color: whitesmoke;
-  }
-  
-  .black {
-    --width: 3.75rem;
-    background-color: black;
-    margin-left: calc(var(--width) / -2);
-    margin-right: calc(var(--width) / -2);
-    z-index: 2;
-  }
-  
-  .black.active {
-    background-color: #333;
-  }
+.yellow {
+  --width: 6.25rem;
+  background-color: yellow;
+  border: 0.0625rem solid #333;
+}
+
+.green {
+  --width: 6.25rem;
+  background-color: green;
+  border: 0.0625rem solid #333;
+}
+
+.blue {
+  --width: 6.25rem;
+  background-color: blue;
+  border: 0.0625rem solid #333;
+}
+
+.indigo {
+  --width: 6.25rem;
+  background-color: indigo;
+  border: 0.0625rem solid #333;
+}
+
+.violet {
+  --width: 6.25rem;
+  background-color: violet;
+  border: 0.0625rem solid #333;
+}
+
+.white.active {
+  background-color: whitesmoke;
+}
+
+.black {
+  --width: 3.75rem;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}

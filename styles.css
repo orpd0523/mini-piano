@@ -1,9 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #AFDCEB;
+  background-color: #afdceb;
   margin: 0;
   min-height: 100vh;
   display: flex;
