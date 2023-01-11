@@ -44,26 +44,26 @@ function playNotes() {
   NOTE_DETAILS.forEach((n) => {
     const keyElement = document.querySelector(`[data-note="${n.note}"]`);
     keyElement.classList.toggle("active", n.active || false);
-    if (n.oscillator != null){
-      n.oscillator.stop()
-      n.oscillator.disconnect()
+    if (n.oscillator != null) {
+      n.oscillator.stop();
+      n.oscillator.disconnect();
     }
   });
 
   const activeNotes = NOTE_DETAILS.filter((n) => n.active);
-  const gain = 1 / activeNotes.length
+  const gain = 1 / activeNotes.length;
   activeNotes.forEach((n) => {
     startNote(n, gain);
   });
 }
 
 function startNote(noteDetail, gain) {
-  const gainNode = audioContext.createGain()
-  gainNode.gain.value = gain
-  const oscillator = audioContext.createOscillator()
-  oscillator.frequency.value = noteDetail.frequency
-  oscillator.type = "sine"
-  oscillator.connect(gainNode).connect(audioContext.destination)
-  oscillator.start()
-  noteDetail.oscillator = oscillator
+  const gainNode = audioContext.createGain();
+  gainNode.gain.value = gain;
+  const oscillator = audioContext.createOscillator();
+  oscillator.frequency.value = noteDetail.frequency;
+  oscillator.type = "sine";
+  oscillator.connect(gainNode).connect(audioContext.destination);
+  oscillator.start();
+  noteDetail.oscillator = oscillator;
 }
