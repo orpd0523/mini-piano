@@ -21,9 +21,9 @@
   }
   
   .white {
-    --width: 100px;
+    --width: 6.25rem;
     background-color: white;
-    border: 1px solid #333;
+    border: .0625rem solid #333;
   }
   
   .white.active {
@@ -31,7 +31,7 @@
   }
   
   .black {
-    --width: 60px;
+    --width: 3.75rem;
     background-color: black;
     margin-left: calc(var(--width) / -2);
     margin-right: calc(var(--width) / -2);
